@@ -13,4 +13,12 @@ Rails.application.config.middleware.insert_before 0, Rack::Cors do
       headers: :any,
       methods: [:get]
   end
+
+  allow do
+    origins 'https://bravado-client.herokuapp.com'
+
+    resource '*',
+      headers: :any,
+      methods: [:get]
+  end
 end
