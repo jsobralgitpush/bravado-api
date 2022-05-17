@@ -47,9 +47,9 @@ test:
   database: bravado_api_database
 
 production:
-<<: *default
-# Your app name(e.g. my app directory folder name is fotoset-backend)
-# you don’t need username and password here below
-database: bravado_api_database
-username: 
-password: <%= ENV[‘FOTOSET_BACKEND_DATABASE_PASSWORD’] %>
+  <<: *default
+  # Your app name(e.g. my app directory folder name is fotoset-backend)
+  # you don’t need username and password here below
+  database: bravado_api_database
+  username: 
+  password: <%= ENV[‘FOTOSET_BACKEND_DATABASE_PASSWORD’] %>
