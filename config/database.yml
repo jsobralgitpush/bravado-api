@@ -35,8 +35,8 @@ development:
 <<: *default
 database: bravado_api_database
 # you need to put your username and password here
-username: 
-password: 
+username: ze
+password: 281610
 
 test:
 <<: *default
