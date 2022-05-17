@@ -27,24 +27,24 @@
 
 # PostgreSQL
 default: &default
-adapter: postgresql
-encoding: unicode
-username: 
-password: 
-host: postgres
-pool: 5
+  adapter: postgresql
+  encoding: unicode
+  username: 
+  password: 
+  host: postgres
+  pool: 5
 
 development:
-<<: *default
-database: bravado_api_database
-# you need to put your username and password here
-username: ze
-password: 281610
+  <<: *default
+  database: bravado_api_database
+  # you need to put your username and password here
+  username: ze
+  password: 281610
 
 test:
-<<: *default
-# Your app name(e.g. my app directory folder name is fotoset-backend)
-database: bravado_api_database
+  <<: *default
+  # Your app name(e.g. my app directory folder name is fotoset-backend)
+  database: bravado_api_database
 
 production:
 <<: *default
