@@ -52,4 +52,4 @@ production:
   # you don’t need username and password here below
   database: bravado_api_database
   username: 
-  password: <%= ENV[‘FOTOSET_BACKEND_DATABASE_PASSWORD’] %>
+  password: 
