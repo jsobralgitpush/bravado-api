@@ -7,7 +7,7 @@
 #   Character.create(name: 'Luke', movie: movies.first)
 require 'json'
 
-file   = File.read("/home/ze/bravado-api/db/seed.json")
+file   = File.read("#{Rails.root.join("db")}/seed.json")
 robots = JSON.parse(file)
 
 robots.each do |robot|
