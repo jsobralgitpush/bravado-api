@@ -1,4 +1,5 @@
 json.array! @robots do |robot|
+    json.id robot.id    
     json.name robot.name
     json.email robot.email
     json.title robot.title
